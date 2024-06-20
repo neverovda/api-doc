@@ -697,6 +697,26 @@ $client->channels->requestChannelCode(
 In the WhatsApp mobile application, you will receive a notification asking you to insert an authorization code.
 Enter the value "code" there
 
+#### HTTP Request
+
+`POST https://api.pact.im/p1/companies/<COMPANY_ID>/channels/<ID>/request_code`
+
+#### URL Parameters
+
+Parameter | Description
+--------- | -----------
+COMPANY_ID | ID of the company
+ID | ID of the channel
+provider | whatsapp
+
+#### Query Parameters
+
+##### Request challenge code
+
+Parameter | Required | Validations | Description
+--------- | -------- | ----------- |
+provider | true | Must be `whatsapp` |
+
 ### Request code (telegram personal)
 
 > Request code:
